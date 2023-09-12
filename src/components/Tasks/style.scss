@@ -1,0 +1,43 @@
+.task-container {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 10px;
+  max-height: 200px;
+  background-color: gainsboro;
+
+  &__divider {
+    border-bottom: 1px solid black;
+  }
+
+  &__title {
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      color: lightseagreen;
+    }
+  }
+
+  &__status {
+    color: green;
+    font-weight: 700;
+  }
+
+  &__des-title {
+    font-weight: 700;
+  }
+
+  &__des-content {
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
